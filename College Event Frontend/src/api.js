@@ -6,19 +6,27 @@ export const loginUser = async (email, password) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ email, password })
   });
-  return response.json();
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.message || "Login failed");
+  }
+  return data;
 };
 
-export const registerUser = async (email, password) => {
+export const registerUser = async (name, email, password) => {
   const response = await fetch(`${API_BASE_URL}/auth/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password })
+    body: JSON.stringify({ name, email, password })
   });
-  return response.json();
+  const data = await response.json();
+  if (!response.ok) {
+    throw new Error(data.message || "Registration failed");
+  }
+  return data;
 };
 
 export const fetchEvents = async () => {
-  const response = await fetch(`${API_BASE_URL}/events`);
+  const response = await fetch(`${API_BASE_URL}/events/all`);
   return response.json();
 };
