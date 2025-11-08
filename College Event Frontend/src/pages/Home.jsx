@@ -4,10 +4,10 @@ const Home = () => {
   return (
     <div className="page-container">
       <div className="container text-center">
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 py-5">
           Welcome to College Event Management
         </h1>
-        <p style={{ fontSize: '1.25rem', color: '#64748b', marginBottom: '2rem' }}>
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
           Discover and participate in college events.
         </p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
