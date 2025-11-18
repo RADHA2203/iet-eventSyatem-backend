@@ -17,7 +17,10 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(cors(
-  {origin: "https://iet-eventsyatem-backend-production.up.railway.app/"}
+  {
+    origin: "https://iet-eventsyatem-backend-production.up.railway.app",
+    credentials: true
+  }
 ));
 
 // Setup cron job for event reminders
