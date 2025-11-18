@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { FaSearch, FaFilter } from "react-icons/fa";
 import EventCard from "../components/EventCard";
 import { fetchEvents, registerForEvent } from "../api";

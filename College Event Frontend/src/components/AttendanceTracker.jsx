@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { fetchEventAttendance } from "../api";
 import { FaUsers, FaChartPie, FaDownload, FaSearch, FaFilePdf } from "react-icons/fa";
 import { exportAttendanceToPDF } from "../utils/exportUtils";

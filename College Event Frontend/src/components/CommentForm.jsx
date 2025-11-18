@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const CommentForm = ({ onSubmit, onCancel, initialValue = "", placeholder = "Add a comment...", submitText = "Post", isReply = false }) => {
   const [content, setContent] = useState(initialValue);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import EventCard from "./EventCard";
 import { fetchMyRegisteredEvents } from "../api";

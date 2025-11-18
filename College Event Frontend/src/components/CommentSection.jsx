@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../AuthContext";
 import { FaComment, FaSortAmountDown } from "react-icons/fa";
 import CommentForm from "./CommentForm";

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import { AuthContext } from "../AuthContext";
 import { FaThumbsUp, FaReply, FaFlag, FaEdit, FaTrash, FaThumbtack, FaEllipsisV } from "react-icons/fa";
 import CommentForm from "./CommentForm";

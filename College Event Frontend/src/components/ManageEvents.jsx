@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPlus, FaEdit, FaTrash, FaEye, FaUsers, FaStar } from "react-icons/fa";
 import { fetchMyCreatedEvents, fetchEvents, deleteEvent, toggleFeaturedEvent } from "../api";

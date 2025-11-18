@@ -2,7 +2,7 @@
   "name": "college-event-frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/App.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

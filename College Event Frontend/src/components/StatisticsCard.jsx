@@ -1,4 +1,3 @@
-import React from "react";
 import { FaTrophy, FaEye, FaCalendar, FaUsers, FaChartLine, FaCheckCircle } from "react-icons/fa";
 
 const StatisticsCard = ({ title, value, icon, trend, color = "blue" }) => {

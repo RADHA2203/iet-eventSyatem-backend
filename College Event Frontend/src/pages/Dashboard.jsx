@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "../AuthContext";
 import EventSlider from "../components/EventSlider";
 import ComingSoonEvents from "../components/ComingSoonEvents";
