@@ -16,7 +16,9 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {origin: "https://iet-event-managment.vercel.app"}
+));
 
 // Setup cron job for event reminders
 // Runs every day at 9:00 AM to send reminders for events happening in 24 hours
