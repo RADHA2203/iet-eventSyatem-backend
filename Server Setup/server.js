@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: "https://iet-eventsyatem-backend-production.up.railway.app",
+    origin: "https://college-event-management-system-egdtf2irh.vercel.app",
     credentials: true
   }
 ));
