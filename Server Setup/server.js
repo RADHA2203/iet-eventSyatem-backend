@@ -18,7 +18,11 @@ const app = express();
 app.use(express.json());
 app.use(cors(
   {
-    origin: "https://college-event-management-system-egdtf2irh.vercel.app",
+    origin: [
+      "https://college-event-management-system-egdtf2irh.vercel.app",
+      "https://iet-event-managment.vercel.app", 
+      "https://college-event-management-system-3y2u4vucg.vercel.app"
+    ],
     credentials: true
   }
 ));
